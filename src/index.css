@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+.fade-in {
+  opacity: 0;
+  transform: translateY(25px);
+  animation: fadeInUp 0.7s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+/* Tablet (1024px  ) */
+@media (max-width: 1024px) {
+  html {
+    font-size: 15px; /* %93 */
+  }
+}
+
+/* Büyük Mobil (768px  ) */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px; /* %87 */
+  }
+
+  h1 {
+    font-size: 1.9rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Küçük Mobil (480px)*/
+@media (max-width: 480px) {
+  html {
+    font-size: 13px; /* %81 */
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Çok küçük cihazlar (360px  ) */
+@media (max-width: 360px) {
+  html {
+    font-size: 12px; /* %75 */
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+}
