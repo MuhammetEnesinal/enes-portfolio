@@ -16,7 +16,7 @@ export default function Hero() {
   const [codeLines, setCodeLines] = useState([]);
 
   useEffect(() => {
-    let isCancelled = false; // StrictMode double-run fix
+    let isCancelled = false;
     let index = 0;
 
     const interval = setInterval(() => {
@@ -39,7 +39,6 @@ export default function Hero() {
       id="hero"
       className="w-full min-h-screen flex flex-col md:flex-row items-center justify-between px-6 md:px-20 pt-28 md:pt-32"
     >
-      {/* LEFT SIDE */}
       <div className="max-w-2xl space-y-6">
         <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight">
           Merhaba, ben <span className="text-blue-600">Muhammet Enes İnal</span>{" "}
@@ -57,50 +56,46 @@ export default function Hero() {
           yoğunlaşıyorum.
         </p>
 
-        {/* BUTTONS */}
-        <div className="flex flex-wrap gap-4 pt-4">
+        <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 pt-4 w-full">
           <a
-            href="/projects"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-xl shadow-lg transition-all hover:-translate-y-1"
+            href="#projects"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-xl shadow-lg transition-all text-center"
           >
             Projelerimi Gör
           </a>
 
           <a
             href="/about"
-            className="bg-gray-900 hover:bg-gray-800 text-white px-7 py-3 rounded-xl shadow-md transition-all hover:-translate-y-1"
+            className="bg-gray-900 hover:bg-gray-800 text-white px-7 py-3 rounded-xl shadow-md transition-all text-center"
           >
             Hakkımda
           </a>
 
           <a
             href="/contact"
-            className="bg-yellow-600 hover:bg-yellow-700 text-white px-7 py-3 rounded-xl shadow-md transition-all hover:-translate-y-1"
+            className="bg-yellow-600 hover:bg-yellow-700 text-white px-7 py-3 rounded-xl shadow-md transition-all text-center"
           >
             İletişime Geç
           </a>
 
           <a
-            href="/MuhammetEnesInalCV.pdf"
-            download
-            className="bg-green-600 hover:bg-green-700 text-white px-7 py-3 rounded-xl shadow-md transition-all hover:-translate-y-1"
+            href="/MuhammetEnesİnalCv.pdf"
+            download="MuhammetEnesİnalCv.pdf"
+            className="bg-green-600 hover:bg-green-700 text-white px-7 py-3 rounded-xl shadow-md transition-all text-center"
           >
             📄 CV İndir
           </a>
         </div>
       </div>
 
-      {/* RIGHT SIDE – TERMINAL */}
       <div className="w-full md:w-[48%] mt-12 md:mt-0">
         <div className="bg-[#0d1117] text-green-400 rounded-2xl p-6 shadow-xl border border-gray-800">
-          {/* Terminal Lights */}
           <div className="flex gap-2 mb-4">
             <div className="w-3 h-3 bg-red-500 rounded-full"></div>
             <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
             <div className="w-3 h-3 bg-green-500 rounded-full"></div>
           </div>
 
-          {/* Animated Code */}
           <div className="font-mono text-[15px] whitespace-pre-line leading-7">
             {codeLines.map((line, i) => (
               <div key={i} className="animate-fadeIn">
