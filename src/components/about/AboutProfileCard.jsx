@@ -52,9 +52,9 @@ export default function AboutProfileCard() {
           </a>
 
           <a
-            href="/Muhammet-Enes-Inal-CV.pdf"
-            download="Muhammet-Enes-Inal-CV.pdf"
-            className="bg-green-600 text-white py-2 rounded-xl shadow hover:bg-green-700 text-center transition"
+            href="/MuhammetEnesİnalCv.pdf"
+            download="MuhammetEnesİnalCv.pdf"
+            className="bg-green-600 hover:bg-green-700 text-white px-7 py-3 rounded-xl shadow-lg shadow-green-200 transition-all hover:-translate-y-1"
           >
             📄 CV İndir
           </a>
