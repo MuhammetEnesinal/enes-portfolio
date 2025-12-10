@@ -8,7 +8,7 @@ const techSkills = [
   { name: "Flutter", icon: "📱" },
   { name: "Dart", icon: "🎯" },
   { name: "Python", icon: "🐍" },
-  { name: "Artificial Intelligence", icon: "🧠" },
+  { name: "Artificial Neural Networks", icon: "🧠" },
   { name: "Data Mining", icon: "⛏️" },
   { name: "SQL", icon: "🗄️" },
   { name: "Java", icon: "☕" },

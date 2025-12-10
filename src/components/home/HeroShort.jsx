@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   const fullCode = [
@@ -57,26 +58,26 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row sm:flex-wrap gap-4 pt-4 w-full">
-          <a
-            href="#projects"
+          <Link
+            to="/projects"
             className="bg-blue-600 hover:bg-blue-700 text-white px-7 py-3 rounded-xl shadow-lg transition-all text-center"
           >
             Projelerimi Gör
-          </a>
+          </Link>
 
-          <a
-            href="/about"
+          <Link
+            to="/about"
             className="bg-gray-900 hover:bg-gray-800 text-white px-7 py-3 rounded-xl shadow-md transition-all text-center"
           >
             Hakkımda
-          </a>
+          </Link>
 
-          <a
-            href="/contact"
+          <Link
+            to="/contact"
             className="bg-yellow-600 hover:bg-yellow-700 text-white px-7 py-3 rounded-xl shadow-md transition-all text-center"
           >
             İletişime Geç
-          </a>
+          </Link>
 
           <a
             href="/MuhammetEnesİnalCv.pdf"
